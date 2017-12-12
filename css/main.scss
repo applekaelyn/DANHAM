@@ -1,0 +1,962 @@
+@import '_base';
+@import 'animate.css';
+
+//hide
+.hide{
+    display: none;
+}
+
+//消息提示框alert txt
+.alert-txt{
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    max-width: 80%;
+    padding:0.6rem 1.1rem;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    @include prefixer(transform,translateX(-50%));
+    @include prefixer(border-radius,0.6rem);
+    z-index: 99999;
+}
+
+//fullPage
+.fullPage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    min-height: 504px;
+    background-repeat: no-repeat;
+    @include prefixer(background-size,100% auto);
+}
+
+//第一个页面
+.one{
+    background-image: url(../img/BG_1.png);
+    background-size: cover;
+    .one-logo{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(100),REM(60),'logo_1.png');
+    }
+    .one-img{
+        position: relative;
+        display: block;
+        top: REM(70);
+        @include fullBg(100%,REM(590),'img_1.png');
+        animate-duration: 1s;    //动画持续时间
+        animate-delay:1s;    //动画延迟时间
+        animate-iteration-count: 1;    //动画执行次数
+
+    }
+    .one-content{
+        position: relative;
+        top: REM(-15);
+        left: REM(55);
+        font-family:  "微软雅黑";
+        color: #FFF;
+        z-index: 99;
+        font-weight: 800;
+        .one-content1{
+            font-size: REM(62);
+            margin-top: REM(-30);
+        }
+        .one-content2{
+            font-size: REM(26);
+            margin-top: REM(-15);
+        }
+        animate-duration: 1s;    //动画持续时间
+        animate-delay: 3s;    //动画延迟时间
+        animate-iteration-count: 1;    //动画执行次数
+
+    }
+    .one-downArrow{
+        display: block;
+        @include fullBg(REM(80),REM(40),'downArrow.png');
+        position: relative;
+        top: REM(20);
+        margin: 0 auto;
+    }
+    
+}
+
+//第二个页面
+.two{
+    background-image: url(../img/BG_2.png);
+    .two-logo{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .two-gif{
+        position: relative;
+        display: block;
+        top: REM(100);
+        @include fullBg(REM(430),REM(250),'h5-02-gif-ok.gif');
+    }
+    
+    .two-content{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: REM(130);
+        @include fullBg(REM(400),REM(320),'title_2.png');
+    }
+    .two-downArrow{
+        display: block;
+        @include fullBg(REM(80),REM(40),'downArrow.png');
+        position: relative;
+        top: REM(190);
+        left: REM(-5);
+    }
+    
+    animate-duration: 2s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}
+
+//第三个页面
+.three{
+    background-image: url(../img/BG_2.png);
+    .three-logo{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .three-title{
+        position: relative;
+        display: block;
+        top: REM(70);
+        left: REM(-25);
+        @include fullBg(REM(470),REM(130),'clip_3.png');
+    }
+    .three-content{
+        position: relative;
+        top: REM(71);
+        .three-content1{
+            display: block;
+            @include fullBg(REM(370),REM(170),'h5-03-gif-01.gif');
+        }
+        .three-content2{
+            position: relative;
+            top: REM(15);
+            display: block;
+            @include fullBg(REM(370),REM(170),'h5-03-gif-02.gif');
+        }
+        .three-content3{
+            position: relative;
+            top: REM(30);
+            display: block;
+            @include fullBg(REM(370),REM(170),'h5-03-gif-3.gif');
+        }
+    }
+    .three-knowMore{
+        position: relative;
+        display: block;
+        top: REM(60);
+        left: REM(100);
+        @include fullBg(REM(120),REM(30),'knowmore_3.png');
+    }
+    .three-downArrow{
+        display: block;
+        @include fullBg(REM(80),REM(40),'downArrow.png');
+        position: relative;
+        top: REM(110);
+        left: REM(-5);
+    }
+    
+    .four-BG{
+        position: absolute;
+        top: REM(40);
+        left: REM(25);
+        @include fullBg(REM(450),REM(800),'BG_4.png');
+    }
+    .four-close{
+        position: relative;
+        display: block;
+        top: REM(15);
+        left: REM(190);
+        @include fullBg(REM(40),REM(40),'close_4.png');
+    }
+    .four-video{
+        position: relative;
+        top: REM(30);
+        left: REM(25);
+        width: REM(400);
+        height: REM(240);
+    }
+    .four-content{
+        position: relative;
+        display: block;
+        top: REM(40);
+        left: REM(5);
+        p{
+            color: #000;
+            font-size: REM(19);
+            font-weight: bold;
+            width: REM(445);
+            
+        }
+    }
+    .four-line{
+        display: block;
+        position: relative;
+        top:REM(55);
+        @include fullBg(REM(450),REM(2),'line_4.png');
+    }
+    .four-img{
+        display: block;
+        @include fullBg(REM(400),REM(220),'gif_4.png');
+        position: relative;
+        top: REM(75);
+        left: REM(-5);
+    }
+    .four-logo1{
+        display: block;
+        @include fullBg(REM(250),REM(130),'gif_title_2.png');
+        position: relative;
+        top: REM(-115);
+    }
+    .four-change{
+        display: block;
+        @include fullBg(REM(40),REM(12),'change_4.png');
+        position: relative;
+        top: REM(-40);
+    }
+    .four-logo2{
+        display: block;
+        @include fullBg(REM(150),REM(80),'logo_4.png');
+        position: relative;
+        top: REM(-20);
+    }
+    
+    animate-duration: 2s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}
+
+//第四个页面
+//.four{
+//  background-image: url(../img/BG_2.png);
+//  .four-BG{
+//      position: relative;
+//      top: REM(40);
+//      display: block;
+//      margin: 0 auto;
+//      @include fullBg(REM(450),REM(800),'BG_4.png');
+//  }
+//  .four-close{
+//      position: relative;
+//      display: block;
+//      top: REM(15);
+//      left: REM(190);
+//      @include fullBg(REM(40),REM(40),'close_4.png');
+//  }
+//  .four-video{
+//      position: relative;
+//      top: REM(30);
+//      left: REM(25);
+//      width: REM(400);
+//      height: REM(240);
+//  }
+//  .four-content{
+//      position: relative;
+//      display: block;
+//      top: REM(40);
+//      left: REM(5);
+//      p{
+//          color: #000;
+//          font-size: REM(19);
+//          font-weight: bold;
+//          width: REM(445);
+//          
+//      }
+//  }
+//  .four-line{
+//      display: block;
+//      position: relative;
+//      top:REM(55);
+//      @include fullBg(REM(450),REM(2),'line_4.png');
+//  }
+//  .four-img{
+//      display: block;
+//      @include fullBg(REM(400),REM(220),'gif_4.png');
+//      position: relative;
+//      top: REM(75);
+//      left: REM(-5);
+//  }
+//  .four-logo1{
+//      display: block;
+//      @include fullBg(REM(250),REM(130),'gif_title_2.png');
+//      position: relative;
+//      top: REM(-115);
+//  }
+//  .four-change{
+//      display: block;
+//      @include fullBg(REM(40),REM(12),'change_4.png');
+//      position: relative;
+//      top: REM(-40);
+//  }
+//  .four-logo2{
+//      display: block;
+//      @include fullBg(REM(150),REM(80),'logo_4.png');
+//      position: relative;
+//      top: REM(-20);
+//  }
+//  
+//  animate-duration: 2s;    //动画持续时间
+//  animate-delay: 0.5s;    //动画延迟时间
+//  animate-iteration-count: 1;    //动画执行次数
+//}
+
+//第五个页面
+//.five{
+//  background-image: url(../img/BG_2.png);
+//  .five-BG{
+//      position: relative;
+//      top: REM(40);
+//      display: block;
+//      margin: 0 auto;
+//      @include fullBg(REM(450),REM(800),'BG_4.png');
+//  }
+//  .five-close{
+//      position: relative;
+//      display: block;
+//      top: REM(15);
+//      left: REM(190);
+//      @include fullBg(REM(40),REM(40),'close_4.png');
+//  }
+//  .five-video{
+//      position: relative;
+//      top: REM(30);
+//      left: REM(25);
+//      width: REM(400);
+//      height: REM(240);
+//  }
+//  .five-content{
+//      position: relative;
+//      display: block;
+//      top: REM(40);
+//      left: REM(5);
+//      p{
+//          color: #000;
+//          font-size: REM(19);
+//          font-weight: bold;
+//          width: REM(445);
+//      }
+//  }
+//  .five-line{
+//      display: block;
+//      position: relative;
+//      top:REM(55);
+//      @include fullBg(REM(450),REM(2),'line_4.png');
+//  }
+//  .five-gif{
+//      display: block;
+//      @include fullBg(REM(400),REM(220),'gif_6.png');
+//      position: relative;
+//      top: REM(75);
+//      left: REM(-5);
+//  }
+//  .five-logo{
+//      display: block;
+//      @include fullBg(REM(150),REM(80),'logo_4.png');
+//      position: relative;
+//      top: REM(100);
+//  }
+//  
+//  animate-duration: 2s;    //动画持续时间
+//  animate-delay: 0.5s;    //动画延迟时间
+//  animate-iteration-count: 1;    //动画执行次数
+//}
+
+//第六个页面
+.six{
+    background-image: url(../img/BG_2.png);
+    .six-logo{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .six-content{
+        position: relative;
+        top: REM(71);
+        .six-content1{
+            display: block;
+            @include fullBg(REM(400),REM(185),'h5-05-gif-01.gif');
+        }
+        .six-content2{
+            position: relative;
+            top: REM(15);
+            display: block;
+            @include fullBg(REM(400),REM(185),'h5-05-gif-02.gif');
+        }
+        .six-title{
+            position: relative;
+            display: block;
+            top: REM(0);
+            left: REM(20);
+            @include fullBg(REM(470),REM(150),'clip_5.png');
+        }
+        .six-content3{
+            position: relative;
+            top: REM(0);
+            display: block;
+            @include fullBg(REM(400),REM(185),'h5-05-gif-03.gif');
+        }
+    }
+    .six-knowMore{
+        position: relative;
+        display: block;
+        top: REM(30);
+        left: REM(130);
+        @include fullBg(REM(120),REM(30),'knowmore_3.png');
+    }
+    .six-downArrow{
+        display: block;
+        @include fullBg(REM(80),REM(40),'downArrow.png');
+        position: relative;
+        top: REM(60);
+        left: REM(-5);
+    }
+ 
+    .five-BG{
+        position: absolute;
+        top: REM(40);
+        left: REM(25);
+        @include fullBg(REM(450),REM(800),'BG_4.png');
+    }
+    .five-close{
+        position: relative;
+        display: block;
+        top: REM(15);
+        left: REM(190);
+        @include fullBg(REM(40),REM(40),'close_4.png');
+    }
+    .five-video{
+        position: relative;
+        top: REM(30);
+        left: REM(25);
+        width: REM(400);
+        height: REM(240);
+    }
+    .five-content{
+        position: relative;
+        display: block;
+        top: REM(40);
+        left: REM(5);
+        p{
+            color: #000;
+            font-size: REM(19);
+            font-weight: bold;
+            width: REM(445);
+        }
+    }
+    .five-line{
+        display: block;
+        position: relative;
+        top:REM(55);
+        @include fullBg(REM(450),REM(2),'line_4.png');
+    }
+    .five-gif{
+        display: block;
+        @include fullBg(REM(400),REM(220),'gif_6.png');
+        position: relative;
+        top: REM(75);
+        left: REM(-5);
+    }
+    .five-logo{
+        display: block;
+        @include fullBg(REM(150),REM(80),'logo_4.png');
+        position: relative;
+        top: REM(100);
+    }
+    
+    animate-duration: 2s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}
+
+//第七个页面
+.seven{
+    background-image: url(../img/BG_7.png);
+    .seven-logo{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .seven-title{
+        position: relative;
+        display: block;
+        top: REM(70);
+        @include fullBg(REM(470),REM(250),'content_7.png');
+    }
+    .seven-content{
+        position: relative;
+        top: REM(150);
+        text-align: center;
+        color: #FFF;
+        font-family: "微软雅黑";
+        font-size: REM(36);
+        font-weight: bold;
+    }
+    .seven-button{
+        position: relative;
+        top: REM(200);
+        display: block;
+        @include fullBg(REM(260),REM(60),'button_7.png');
+    }
+    
+    animate-duration: 2s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}
+
+//第八个页面
+.eight{
+    background-image: url(../img/BG_7.png);
+    .eight-logo1{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .eight-logo2{
+        position: relative;
+        display: block;
+        top: REM(70);
+        @include fullBg(REM(250),REM(160),'gif_title_2.png');
+    }
+    .eight-tip{
+        position: relative;
+        top: REM(100);
+        display: block;
+        @include fullBg(REM(370),REM(50),'tip_8.png');
+    }
+    .eight-form{
+        position: relative;
+        top: REM(200);
+        .eight-input{
+            position: relative;
+            top:REM(-80);
+            left: REM(20);
+            margin-bottom: REM(30);
+            font-size: REM(30);
+            color: #FFFFFF;
+            span{
+                width: REM(90);
+                height: REM(50);
+                display:-moz-inline-box;
+                display:inline-block;
+                border: none;
+                border-right: solid 2px #B3B3B3;
+                margin-top: REM(20);
+                margin-right: REM(30);
+            }
+            input{
+                margin-top: REM(20);
+                background: none;
+                border: none;
+                border-bottom: solid 2px #b3b3b3;
+                text-align: center;
+                padding:0 REM(10); 
+                width: REM(300);
+                height: REM(50);
+                line-height: REM(50);
+                color: #FFFFFF;
+                font-size: REM(30);
+            }
+        }
+        .eight-icon{
+            position: relative;
+            top: REM(5);
+            display: inline-block;
+            @include fullBg(REM(20),REM(20),'checkbox_false_8.png');
+            &.active{
+                background-image: url($URL + 'checkbox_true_8.png');
+            }            
+        }
+        .eight-time{
+            position: relative;
+            top: REM(-80);
+            left: REM(40);
+            color: #FFFFFF;
+            font-size: REM(18);
+            div{
+                position: relative;
+                top: REM(10);
+                display: inline;
+                margin-right: REM(80);
+            }
+            p{
+                font-size: REM(30);
+            }
+        }
+        .eight-line{
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: REM(-55);
+            width: REM(400);
+            height: REM(1);
+            border-bottom:solid REM(2) #B3B3B3;
+        }
+        .eight-howLong{
+            position: relative;
+            top: REM(-45);
+            left: REM(40);
+            color: #FFFFFF;
+            font-size: REM(18);
+            div{
+                position: relative;
+                top: REM(10);
+                display: inline;
+                margin-right: REM(50);
+            }
+            p{
+                font-size: REM(30);
+            }
+        }
+        
+    }
+    .eight-button{
+        position: relative;
+        top: REM(200);
+        display: block;
+        @include fullBg(REM(260),REM(60),'button_8.png');
+    }        
+    
+    animate-duration: 1s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}
+
+//第九个页面
+.nine{
+    background-image: url(../img/BG_7.png);
+    .nine-logo1{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .nine-logo2{
+        position: relative;
+        display: block;
+        top: REM(70);
+        @include fullBg(REM(250),REM(160),'gif_title_2.png');
+    }
+    .nine-content{
+        position: relative;
+        top: REM(71);
+        color: #FFF;
+        text-align: center;
+        margin: 0 auto;
+        .nine-content1{
+            position: relative;
+            top: REM(10);
+            font-size: REM(48);
+            font-family: simhei;
+            font-weight: bold;
+        }
+        .nine-label{
+            position: relative;
+            display: block;
+            left: REM(20);
+            top: REM(-170);
+            @include fullBg(REM(450),REM(400),'label_9.png');
+        }
+        .nine-content2{
+            position: relative;
+            top: REM(-155);
+            letter-spacing: REM(2);
+            font-family:simhei;
+            font-size:REM(17);
+        }
+        .nine-time{
+            position: relative;
+            top: REM(-130);
+            display: block;
+            @include fullBg(REM(40),REM(40),'time_9.png');
+        }
+        .nine-loaction{
+            position: relative;
+            top: REM(-130);
+            display: block;
+            @include fullBg(REM(30),REM(40),'location_9.png');
+        }
+        .nine-content3{
+            position: relative;
+            top: REM(-120);
+            font-family:simhei;
+            font-size:REM(20);
+            margin-bottom: REM(20);
+        }        
+    }
+    .nine-downArrow{
+        display: block;
+        @include fullBg(REM(80),REM(40),'downArrow.png');
+        position: relative;
+        top: REM(-40);
+        left: REM(-5);
+    }
+    animate-duration: 1s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}
+
+//第十个页面
+//.ten{
+//  background-image: url(../img/BG_7.png);
+//  .ten-BG{
+//      position: relative;
+//      top: REM(20);
+//      display: block;
+//      margin: 0 auto;
+//      @include fullBg(REM(450),REM(850),'BG_4.png');
+//  }
+//  .ten-close{
+//      position: relative;
+//      display: block;
+//      top: REM(15);
+//      left: REM(190);
+//      @include fullBg(REM(40),REM(40),'close_4.png');
+//  }
+//  .ten-img{
+//      display: block;
+//      position: relative;
+//      top: REM(20);
+//      margin: 0 auto;
+//      @include fullBg(REM(430),REM(220),'img_10.png');
+//  }
+//  .ten-tip{
+//      display: block;
+//      position: relative;
+//      top: REM(40);
+//      margin: 0 auto;
+//      @include fullBg(REM(380),REM(50),'tip_10.png');
+//  }
+//  .ten-content{
+//      position: relative;
+//      display: block;
+//      top: REM(80);
+//      left: REM(70);
+//      color: #000;
+//      font-size: REM(27);
+//      div{
+//          margin-bottom: REM(10);
+//      }
+//      .ten-icon{
+//          display: inline-block;
+//          position: relative;
+//          top: REM(12);
+//          @include fullBg(REM(20),REM(20),'icon_10.png');
+//      }
+//  }
+//  .ten-logo{
+//      display: block;
+//      @include fullBg(REM(150),REM(80),'logo_4.png');
+//      position: relative;
+//      top: REM(150);
+//  }
+//  
+//  animate-duration: 1s;    //动画持续时间
+//  animate-delay: 0.5s;    //动画延迟时间
+//  animate-iteration-count: 1;    //动画执行次数
+//}
+
+//第十一个页面
+//.eleven{
+//  background-image: url(../img/BG_7.png);
+//  .eleven-BG{
+//      position: relative;
+//      top: REM(20);
+//      display: block;
+//      margin: 0 auto;
+//      @include fullBg(REM(450),REM(850),'BG_4.png');
+//  }
+//  .eleven-close{
+//      position: relative;
+//      display: block;
+//      top: REM(15);
+//      left: REM(190);
+//      @include fullBg(REM(40),REM(40),'close_4.png');
+//  }
+//  .eleven-qrcode{
+//      display: block;
+//      position: relative;
+//      top: REM(150);
+//      margin: 0 auto;
+//      @include fullBg(REM(220),REM(220),'qrcode_11.png');
+//  }
+//  .eleven-tip{
+//      display: block;
+//      position: relative;
+//      top: REM(140);
+//      margin: 0 auto;
+//      @include fullBg(REM(330),REM(90),'content_11.png');
+//  }
+//  .eleven-logo{
+//      display: block;
+//      @include fullBg(REM(150),REM(80),'logo_4.png');
+//      position: relative;
+//      top: REM(350);
+//  }
+//  
+//  animate-duration: 1s;    //动画持续时间
+//  animate-delay: 0.5s;    //动画延迟时间
+//  animate-iteration-count: 1;    //动画执行次数
+//}
+
+//第十二个页面
+.twelve{
+    background-image: url(../img/BG_2.png);
+    .twelve-logo1{
+        position: relative;
+        top: REM(40);
+        display: block;
+        margin: 0 auto;
+        @include fullBg(REM(300),REM(40),'logo.png');
+    }
+    .twelve-logo2{
+        position: relative;
+        display: block;
+        top: REM(70);
+        @include fullBg(REM(250),REM(160),'gif_title_2.png');
+    }
+    .twelve-video{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: REM(90);
+        width: REM(400);
+        height: REM(240);
+    }
+    .twelve-businessParters{
+        display: block;
+        @include fullBg(REM(400),REM(100),'businessParters_12.png');
+        position: relative;
+        top: REM(150);
+        left: REM(-5);
+    }
+    .twelve-buttonLeft{
+        display: inline-block;
+        @include fullBg(REM(220),REM(60),'buttonLeft_12.png');
+        position: relative;
+        top: REM(200);
+        margin-left: REM(17);
+        margin-right: REM(17);
+    }
+    .twelve-buttonRight{
+        display: inline-block;        
+        @include fullBg(REM(220),REM(60),'buttonRight_12.png');
+        position: relative;
+        top: REM(200);
+    }
+    
+    .ten-BG{
+        position: absolute;
+        top: REM(20);
+        left: REM(25);
+        @include fullBg(REM(450),REM(850),'BG_4.png');
+    }
+    .ten-close{
+        position: relative;
+        display: block;
+        top: REM(15);
+        left: REM(190);
+        @include fullBg(REM(40),REM(40),'close_4.png');
+    }
+    .ten-img{
+        display: block;
+        position: relative;
+        top: REM(20);
+        margin: 0 auto;
+        @include fullBg(REM(430),REM(220),'img_10.png');
+    }
+    .ten-tip{
+        display: block;
+        position: relative;
+        top: REM(40);
+        margin: 0 auto;
+        @include fullBg(REM(380),REM(50),'tip_10.png');
+    }
+    .ten-content{
+        position: relative;
+        display: block;
+        top: REM(80);
+        left: REM(70);
+        color: #000;
+        font-size: REM(27);
+        div{
+            margin-bottom: REM(10);
+        }
+        .ten-icon{
+            display: inline-block;
+            position: relative;
+            top: REM(12);
+            @include fullBg(REM(20),REM(20),'icon_10.png');
+        }
+    }
+    .ten-logo{
+        display: block;
+        @include fullBg(REM(150),REM(80),'logo_4.png');
+        position: relative;
+        top: REM(150);
+    }
+    
+    .eleven-BG{
+        position: absolute;
+        top: REM(20);
+        left: REM(25);
+        @include fullBg(REM(450),REM(850),'BG_4.png');
+    }
+    .eleven-close{
+        position: relative;
+        display: block;
+        top: REM(15);
+        left: REM(190);
+        @include fullBg(REM(40),REM(40),'close_4.png');
+    }
+    .eleven-qrcode{
+        display: block;
+        position: relative;
+        top: REM(150);
+        margin: 0 auto;
+        @include fullBg(REM(220),REM(220),'qrcode_11.png');
+    }
+    .eleven-tip{
+        display: block;
+        position: relative;
+        top: REM(140);
+        margin: 0 auto;
+        @include fullBg(REM(330),REM(90),'content_11.png');
+    }
+    .eleven-logo{
+        display: block;
+        @include fullBg(REM(150),REM(80),'logo_4.png');
+        position: relative;
+        top: REM(350);
+    }
+    
+    animate-duration: 1s;    //动画持续时间
+    animate-delay: 0.5s;    //动画延迟时间
+    animate-iteration-count: 1;    //动画执行次数
+}

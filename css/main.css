@@ -1,0 +1,1184 @@
+@charset "UTF-8";
+/*--------------------功能: 重设浏览器默认样式 START--------------------*/
+@import url(animate.css);
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt,
+em, embed,
+fieldset, figcaption, figure, font, footer, form,
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd,
+keygen,
+label, legend, li,
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q,
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tt,
+u, ul,
+var {
+  background: transparent;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: top;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased; }
+
+blockquote, q {
+  quotes: none; }
+
+table, table td {
+  padding: 0;
+  border: none;
+  border-collapse: collapse; }
+
+img {
+  border: 0; }
+
+select {
+  white-space: nowrap; }
+
+caption {
+  text-align: left; }
+
+embed {
+  vertical-align: top; }
+
+div, ul, li, ol, dl, dd, p {
+  word-wrap: break-word; }
+
+ul, li, ol, dl, dd {
+  list-style-type: none; }
+
+input, textarea, select {
+  font-family: inherit;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+body {
+  text-align: left;
+  color: #828282;
+  overflow-x: hidden; }
+
+html, body {
+  font: 10px/1.5 Microsoft YaHei,\5b8b\4f53, Arial, Verdana;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #828282; }
+
+input, input[type="button"], input[type="submit"], input[type="reset"], input[type="number"] {
+  -webkit-appearance: none; }
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+/* ---------- Responsive accurate ---------- */
+@media (min-width: 640px) {
+  html {
+    font-size: 24px; } }
+@media (min-width: 631px) and (max-width: 639px) {
+  html {
+    font-size: 23.66px; } }
+@media (min-width: 622px) and (max-width: 630px) {
+  html {
+    font-size: 23.33px; } }
+@media (min-width: 613px) and (max-width: 621px) {
+  html {
+    font-size: 23px; } }
+@media (min-width: 604px) and (max-width: 612px) {
+  html {
+    font-size: 22.66px; } }
+@media (min-width: 595px) and (max-width: 603px) {
+  html {
+    font-size: 22.33px; } }
+@media (min-width: 586px) and (max-width: 594px) {
+  html {
+    font-size: 22px; } }
+@media (min-width: 577px) and (max-width: 585px) {
+  html {
+    font-size: 21.66px; } }
+@media (min-width: 568px) and (max-width: 576px) {
+  html {
+    font-size: 21.33px; } }
+@media (min-width: 559px) and (max-width: 567px) {
+  html {
+    font-size: 21px; } }
+@media (min-width: 550px) and (max-width: 558px) {
+  html {
+    font-size: 20.66px; } }
+@media (min-width: 541px) and (max-width: 549px) {
+  html {
+    font-size: 20.33px; } }
+@media (min-width: 533px) and (max-width: 540px) {
+  html {
+    font-size: 20px; } }
+@media (min-width: 524px) and (max-width: 532px) {
+  html {
+    font-size: 19.66px; } }
+@media (min-width: 515px) and (max-width: 523px) {
+  html {
+    font-size: 19.33px; } }
+@media (min-width: 506px) and (max-width: 514px) {
+  html {
+    font-size: 19px; } }
+@media (min-width: 497px) and (max-width: 505px) {
+  html {
+    font-size: 18.66px; } }
+@media (min-width: 488px) and (max-width: 496px) {
+  html {
+    font-size: 18.33px; } }
+@media (min-width: 480px) and (max-width: 487px) {
+  html {
+    font-size: 18px; } }
+@media (min-width: 471px) and (max-width: 479px) {
+  html {
+    font-size: 17.66px; } }
+@media (min-width: 462px) and (max-width: 470px) {
+  html {
+    font-size: 17.33px; } }
+@media (min-width: 453px) and (max-width: 461px) {
+  html {
+    font-size: 17px; } }
+@media (min-width: 444px) and (max-width: 452px) {
+  html {
+    font-size: 17.12px; } }
+@media (min-width: 435px) and (max-width: 443px) {
+  html {
+    font-size: 16.33px; } }
+@media (min-width: 426px) and (max-width: 434px) {
+  html {
+    font-size: 16px; } }
+@media (min-width: 417px) and (max-width: 425px) {
+  html {
+    font-size: 15.66px; } }
+@media (min-width: 408px) and (max-width: 416px) {
+  html {
+    font-size: 15.33px; } }
+@media (min-width: 400px) and (max-width: 407px) {
+  html {
+    font-size: 15px; } }
+@media (min-width: 391px) and (max-width: 399px) {
+  html {
+    font-size: 14.66px; } }
+@media (min-width: 382px) and (max-width: 390px) {
+  html {
+    font-size: 14.33px; } }
+@media (min-width: 374px) and (max-width: 381px) {
+  html {
+    font-size: 14px; } }
+@media (min-width: 365px) and (max-width: 373px) {
+  html {
+    font-size: 13.66px; } }
+@media (min-width: 356px) and (max-width: 364px) {
+  html {
+    font-size: 13.33px; } }
+@media (min-width: 347px) and (max-width: 355px) {
+  html {
+    font-size: 13px; } }
+@media (min-width: 338px) and (max-width: 346px) {
+  html {
+    font-size: 12.66px; } }
+@media (min-width: 329px) and (max-width: 337px) {
+  html {
+    font-size: 12.44px; } }
+@media (max-width: 328px) {
+  html {
+    font-size: 12px; } }
+/*
+ * SASS setting 
+ */
+.hide {
+  display: none; }
+
+.alert-txt {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  max-width: 80%;
+  padding: 0.6rem 1.1rem;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+  z-index: 99999; }
+
+.fullPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  min-height: 504px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto; }
+
+.one {
+  background-image: url(../img/BG_1.png);
+  background-size: cover; }
+  .one .one-logo {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 5.33333rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    background: url(../img/logo_1.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .one .one-img {
+    position: relative;
+    display: block;
+    top: 3.73333rem;
+    width: 100%;
+    height: 31.46667rem;
+    margin: 0 auto;
+    background: url(../img/img_1.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    animate-duration: 1s;
+    animate-delay: 1s;
+    animate-iteration-count: 1; }
+  .one .one-content {
+    position: relative;
+    top: -0.8rem;
+    left: 2.93333rem;
+    font-family: "微软雅黑";
+    color: #FFF;
+    z-index: 99;
+    font-weight: 800;
+    animate-duration: 1s;
+    animate-delay: 3s;
+    animate-iteration-count: 1; }
+    .one .one-content .one-content1 {
+      font-size: 3.30667rem;
+      margin-top: -1.6rem; }
+    .one .one-content .one-content2 {
+      font-size: 1.38667rem;
+      margin-top: -0.8rem; }
+  .one .one-downArrow {
+    display: block;
+    width: 4.26667rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/downArrow.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 1.06667rem;
+    margin: 0 auto; }
+
+.two {
+  background-image: url(../img/BG_2.png);
+  animate-duration: 2s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .two .two-logo {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .two .two-gif {
+    position: relative;
+    display: block;
+    top: 5.33333rem;
+    width: 22.93333rem;
+    height: 13.33333rem;
+    margin: 0 auto;
+    background: url(../img/h5-02-gif-ok.gif) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .two .two-content {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 6.93333rem;
+    width: 21.33333rem;
+    height: 17.06667rem;
+    margin: 0 auto;
+    background: url(../img/title_2.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .two .two-downArrow {
+    display: block;
+    width: 4.26667rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/downArrow.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 10.13333rem;
+    left: -0.26667rem; }
+
+.three {
+  background-image: url(../img/BG_2.png);
+  animate-duration: 2s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .three .three-logo {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .three .three-title {
+    position: relative;
+    display: block;
+    top: 3.73333rem;
+    left: -1.33333rem;
+    width: 25.06667rem;
+    height: 6.93333rem;
+    margin: 0 auto;
+    background: url(../img/clip_3.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .three .three-content {
+    position: relative;
+    top: 3.78667rem; }
+    .three .three-content .three-content1 {
+      display: block;
+      width: 19.73333rem;
+      height: 9.06667rem;
+      margin: 0 auto;
+      background: url(../img/h5-03-gif-01.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .three .three-content .three-content2 {
+      position: relative;
+      top: 0.8rem;
+      display: block;
+      width: 19.73333rem;
+      height: 9.06667rem;
+      margin: 0 auto;
+      background: url(../img/h5-03-gif-02.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .three .three-content .three-content3 {
+      position: relative;
+      top: 1.6rem;
+      display: block;
+      width: 19.73333rem;
+      height: 9.06667rem;
+      margin: 0 auto;
+      background: url(../img/h5-03-gif-3.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+  .three .three-knowMore {
+    position: relative;
+    display: block;
+    top: 3.2rem;
+    left: 5.33333rem;
+    width: 6.4rem;
+    height: 1.6rem;
+    margin: 0 auto;
+    background: url(../img/knowmore_3.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .three .three-downArrow {
+    display: block;
+    width: 4.26667rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/downArrow.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5.86667rem;
+    left: -0.26667rem; }
+  .three .four-BG {
+    position: absolute;
+    top: 2.13333rem;
+    left: 1.33333rem;
+    width: 24rem;
+    height: 42.66667rem;
+    margin: 0 auto;
+    background: url(../img/BG_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .three .four-close {
+    position: relative;
+    display: block;
+    top: 0.8rem;
+    left: 10.13333rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/close_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .three .four-video {
+    position: relative;
+    top: 1.6rem;
+    left: 1.33333rem;
+    width: 21.33333rem;
+    height: 12.8rem; }
+  .three .four-content {
+    position: relative;
+    display: block;
+    top: 2.13333rem;
+    left: 0.26667rem; }
+    .three .four-content p {
+      color: #000;
+      font-size: 1.01333rem;
+      font-weight: bold;
+      width: 23.73333rem; }
+  .three .four-line {
+    display: block;
+    position: relative;
+    top: 2.93333rem;
+    width: 24rem;
+    height: 0.10667rem;
+    margin: 0 auto;
+    background: url(../img/line_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .three .four-img {
+    display: block;
+    width: 21.33333rem;
+    height: 11.73333rem;
+    margin: 0 auto;
+    background: url(../img/gif_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 4rem;
+    left: -0.26667rem; }
+  .three .four-logo1 {
+    display: block;
+    width: 13.33333rem;
+    height: 6.93333rem;
+    margin: 0 auto;
+    background: url(../img/gif_title_2.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: -6.13333rem; }
+  .three .four-change {
+    display: block;
+    width: 2.13333rem;
+    height: 0.64rem;
+    margin: 0 auto;
+    background: url(../img/change_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: -2.13333rem; }
+  .three .four-logo2 {
+    display: block;
+    width: 8rem;
+    height: 4.26667rem;
+    margin: 0 auto;
+    background: url(../img/logo_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: -1.06667rem; }
+
+.six {
+  background-image: url(../img/BG_2.png);
+  animate-duration: 2s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .six .six-logo {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .six .six-content {
+    position: relative;
+    top: 3.78667rem; }
+    .six .six-content .six-content1 {
+      display: block;
+      width: 21.33333rem;
+      height: 9.86667rem;
+      margin: 0 auto;
+      background: url(../img/h5-05-gif-01.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .six .six-content .six-content2 {
+      position: relative;
+      top: 0.8rem;
+      display: block;
+      width: 21.33333rem;
+      height: 9.86667rem;
+      margin: 0 auto;
+      background: url(../img/h5-05-gif-02.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .six .six-content .six-title {
+      position: relative;
+      display: block;
+      top: 0rem;
+      left: 1.06667rem;
+      width: 25.06667rem;
+      height: 8rem;
+      margin: 0 auto;
+      background: url(../img/clip_5.png) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .six .six-content .six-content3 {
+      position: relative;
+      top: 0rem;
+      display: block;
+      width: 21.33333rem;
+      height: 9.86667rem;
+      margin: 0 auto;
+      background: url(../img/h5-05-gif-03.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+  .six .six-knowMore {
+    position: relative;
+    display: block;
+    top: 1.6rem;
+    left: 6.93333rem;
+    width: 6.4rem;
+    height: 1.6rem;
+    margin: 0 auto;
+    background: url(../img/knowmore_3.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .six .six-downArrow {
+    display: block;
+    width: 4.26667rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/downArrow.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 3.2rem;
+    left: -0.26667rem; }
+  .six .five-BG {
+    position: absolute;
+    top: 2.13333rem;
+    left: 1.33333rem;
+    width: 24rem;
+    height: 42.66667rem;
+    margin: 0 auto;
+    background: url(../img/BG_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .six .five-close {
+    position: relative;
+    display: block;
+    top: 0.8rem;
+    left: 10.13333rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/close_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .six .five-video {
+    position: relative;
+    top: 1.6rem;
+    left: 1.33333rem;
+    width: 21.33333rem;
+    height: 12.8rem; }
+  .six .five-content {
+    position: relative;
+    display: block;
+    top: 2.13333rem;
+    left: 0.26667rem; }
+    .six .five-content p {
+      color: #000;
+      font-size: 1.01333rem;
+      font-weight: bold;
+      width: 23.73333rem; }
+  .six .five-line {
+    display: block;
+    position: relative;
+    top: 2.93333rem;
+    width: 24rem;
+    height: 0.10667rem;
+    margin: 0 auto;
+    background: url(../img/line_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .six .five-gif {
+    display: block;
+    width: 21.33333rem;
+    height: 11.73333rem;
+    margin: 0 auto;
+    background: url(../img/gif_6.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 4rem;
+    left: -0.26667rem; }
+  .six .five-logo {
+    display: block;
+    width: 8rem;
+    height: 4.26667rem;
+    margin: 0 auto;
+    background: url(../img/logo_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5.33333rem; }
+
+.seven {
+  background-image: url(../img/BG_7.png);
+  animate-duration: 2s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .seven .seven-logo {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .seven .seven-title {
+    position: relative;
+    display: block;
+    top: 3.73333rem;
+    width: 25.06667rem;
+    height: 13.33333rem;
+    margin: 0 auto;
+    background: url(../img/content_7.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .seven .seven-content {
+    position: relative;
+    top: 8rem;
+    text-align: center;
+    color: #FFF;
+    font-family: "微软雅黑";
+    font-size: 1.92rem;
+    font-weight: bold; }
+  .seven .seven-button {
+    position: relative;
+    top: 10.66667rem;
+    display: block;
+    width: 13.86667rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    background: url(../img/button_7.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+
+.eight {
+  background-image: url(../img/BG_7.png);
+  animate-duration: 1s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .eight .eight-logo1 {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .eight .eight-logo2 {
+    position: relative;
+    display: block;
+    top: 3.73333rem;
+    width: 13.33333rem;
+    height: 8.53333rem;
+    margin: 0 auto;
+    background: url(../img/gif_title_2.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .eight .eight-tip {
+    position: relative;
+    top: 5.33333rem;
+    display: block;
+    width: 19.73333rem;
+    height: 2.66667rem;
+    margin: 0 auto;
+    background: url(../img/tip_8.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .eight .eight-form {
+    position: relative;
+    top: 10.66667rem; }
+    .eight .eight-form .eight-input {
+      position: relative;
+      top: -4.26667rem;
+      left: 1.06667rem;
+      margin-bottom: 1.6rem;
+      font-size: 1.6rem;
+      color: #FFFFFF; }
+      .eight .eight-form .eight-input span {
+        width: 4.8rem;
+        height: 2.66667rem;
+        display: -moz-inline-box;
+        display: inline-block;
+        border: none;
+        border-right: solid 2px #B3B3B3;
+        margin-top: 1.06667rem;
+        margin-right: 1.6rem; }
+      .eight .eight-form .eight-input input {
+        margin-top: 1.06667rem;
+        background: none;
+        border: none;
+        border-bottom: solid 2px #b3b3b3;
+        text-align: center;
+        padding: 0 0.53333rem;
+        width: 16rem;
+        height: 2.66667rem;
+        line-height: 2.66667rem;
+        color: #FFFFFF;
+        font-size: 1.6rem; }
+    .eight .eight-form .eight-icon {
+      position: relative;
+      top: 0.26667rem;
+      display: inline-block;
+      width: 1.06667rem;
+      height: 1.06667rem;
+      margin: 0 auto;
+      background: url(../img/checkbox_false_8.png) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+      .eight .eight-form .eight-icon.active {
+        background-image: url("../img/checkbox_true_8.png"); }
+    .eight .eight-form .eight-time {
+      position: relative;
+      top: -4.26667rem;
+      left: 2.13333rem;
+      color: #FFFFFF;
+      font-size: 0.96rem; }
+      .eight .eight-form .eight-time div {
+        position: relative;
+        top: 0.53333rem;
+        display: inline;
+        margin-right: 4.26667rem; }
+      .eight .eight-form .eight-time p {
+        font-size: 1.6rem; }
+    .eight .eight-form .eight-line {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: -2.93333rem;
+      width: 21.33333rem;
+      height: 0.05333rem;
+      border-bottom: solid 0.10667rem #B3B3B3; }
+    .eight .eight-form .eight-howLong {
+      position: relative;
+      top: -2.4rem;
+      left: 2.13333rem;
+      color: #FFFFFF;
+      font-size: 0.96rem; }
+      .eight .eight-form .eight-howLong div {
+        position: relative;
+        top: 0.53333rem;
+        display: inline;
+        margin-right: 2.66667rem; }
+      .eight .eight-form .eight-howLong p {
+        font-size: 1.6rem; }
+  .eight .eight-button {
+    position: relative;
+    top: 10.66667rem;
+    display: block;
+    width: 13.86667rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    background: url(../img/button_8.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+
+.nine {
+  background-image: url(../img/BG_7.png);
+  animate-duration: 1s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .nine .nine-logo1 {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .nine .nine-logo2 {
+    position: relative;
+    display: block;
+    top: 3.73333rem;
+    width: 13.33333rem;
+    height: 8.53333rem;
+    margin: 0 auto;
+    background: url(../img/gif_title_2.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .nine .nine-content {
+    position: relative;
+    top: 3.78667rem;
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto; }
+    .nine .nine-content .nine-content1 {
+      position: relative;
+      top: 0.53333rem;
+      font-size: 2.56rem;
+      font-family: simhei;
+      font-weight: bold; }
+    .nine .nine-content .nine-label {
+      position: relative;
+      display: block;
+      left: 1.06667rem;
+      top: -9.06667rem;
+      width: 24rem;
+      height: 21.33333rem;
+      margin: 0 auto;
+      background: url(../img/label_9.png) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .nine .nine-content .nine-content2 {
+      position: relative;
+      top: -8.26667rem;
+      letter-spacing: 0.10667rem;
+      font-family: simhei;
+      font-size: 0.90667rem; }
+    .nine .nine-content .nine-time {
+      position: relative;
+      top: -6.93333rem;
+      display: block;
+      width: 2.13333rem;
+      height: 2.13333rem;
+      margin: 0 auto;
+      background: url(../img/time_9.png) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .nine .nine-content .nine-loaction {
+      position: relative;
+      top: -6.93333rem;
+      display: block;
+      width: 1.6rem;
+      height: 2.13333rem;
+      margin: 0 auto;
+      background: url(../img/location_9.png) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+    .nine .nine-content .nine-content3 {
+      position: relative;
+      top: -6.4rem;
+      font-family: simhei;
+      font-size: 1.06667rem;
+      margin-bottom: 1.06667rem; }
+  .nine .nine-downArrow {
+    display: block;
+    width: 4.26667rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/downArrow.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: -2.13333rem;
+    left: -0.26667rem; }
+
+.twelve {
+  background-image: url(../img/BG_2.png);
+  animate-duration: 1s;
+  animate-delay: 0.5s;
+  animate-iteration-count: 1; }
+  .twelve .twelve-logo1 {
+    position: relative;
+    top: 2.13333rem;
+    display: block;
+    margin: 0 auto;
+    width: 16rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .twelve-logo2 {
+    position: relative;
+    display: block;
+    top: 3.73333rem;
+    width: 13.33333rem;
+    height: 8.53333rem;
+    margin: 0 auto;
+    background: url(../img/gif_title_2.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .twelve-video {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 4.8rem;
+    width: 21.33333rem;
+    height: 12.8rem; }
+  .twelve .twelve-businessParters {
+    display: block;
+    width: 21.33333rem;
+    height: 5.33333rem;
+    margin: 0 auto;
+    background: url(../img/businessParters_12.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 8rem;
+    left: -0.26667rem; }
+  .twelve .twelve-buttonLeft {
+    display: inline-block;
+    width: 11.73333rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    background: url(../img/buttonLeft_12.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 10.66667rem;
+    margin-left: 0.90667rem;
+    margin-right: 0.90667rem; }
+  .twelve .twelve-buttonRight {
+    display: inline-block;
+    width: 11.73333rem;
+    height: 3.2rem;
+    margin: 0 auto;
+    background: url(../img/buttonRight_12.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 10.66667rem; }
+  .twelve .ten-BG {
+    position: absolute;
+    top: 1.06667rem;
+    left: 1.33333rem;
+    width: 24rem;
+    height: 45.33333rem;
+    margin: 0 auto;
+    background: url(../img/BG_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .ten-close {
+    position: relative;
+    display: block;
+    top: 0.8rem;
+    left: 10.13333rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/close_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .ten-img {
+    display: block;
+    position: relative;
+    top: 1.06667rem;
+    margin: 0 auto;
+    width: 22.93333rem;
+    height: 11.73333rem;
+    margin: 0 auto;
+    background: url(../img/img_10.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .ten-tip {
+    display: block;
+    position: relative;
+    top: 2.13333rem;
+    margin: 0 auto;
+    width: 20.26667rem;
+    height: 2.66667rem;
+    margin: 0 auto;
+    background: url(../img/tip_10.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .ten-content {
+    position: relative;
+    display: block;
+    top: 4.26667rem;
+    left: 3.73333rem;
+    color: #000;
+    font-size: 1.44rem; }
+    .twelve .ten-content div {
+      margin-bottom: 0.53333rem; }
+    .twelve .ten-content .ten-icon {
+      display: inline-block;
+      position: relative;
+      top: 0.64rem;
+      width: 1.06667rem;
+      height: 1.06667rem;
+      margin: 0 auto;
+      background: url(../img/icon_10.png) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+      background-size: 100% 100%; }
+  .twelve .ten-logo {
+    display: block;
+    width: 8rem;
+    height: 4.26667rem;
+    margin: 0 auto;
+    background: url(../img/logo_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 8rem; }
+  .twelve .eleven-BG {
+    position: absolute;
+    top: 1.06667rem;
+    left: 1.33333rem;
+    width: 24rem;
+    height: 45.33333rem;
+    margin: 0 auto;
+    background: url(../img/BG_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .eleven-close {
+    position: relative;
+    display: block;
+    top: 0.8rem;
+    left: 10.13333rem;
+    width: 2.13333rem;
+    height: 2.13333rem;
+    margin: 0 auto;
+    background: url(../img/close_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .eleven-qrcode {
+    display: block;
+    position: relative;
+    top: 8rem;
+    margin: 0 auto;
+    width: 11.73333rem;
+    height: 11.73333rem;
+    margin: 0 auto;
+    background: url(../img/qrcode_11.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .eleven-tip {
+    display: block;
+    position: relative;
+    top: 7.46667rem;
+    margin: 0 auto;
+    width: 17.6rem;
+    height: 4.8rem;
+    margin: 0 auto;
+    background: url(../img/content_11.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%; }
+  .twelve .eleven-logo {
+    display: block;
+    width: 8rem;
+    height: 4.26667rem;
+    margin: 0 auto;
+    background: url(../img/logo_4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    top: 18.66667rem; }
+
+/*# sourceMappingURL=main.css.map */
